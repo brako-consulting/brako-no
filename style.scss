@@ -131,10 +131,73 @@ table {
  CSS RESET DONE
  */
 
-.header {
-  display: flex;
+:root {
+  --background-color: #e8e0c6;
+  --max-content-width: 67.5rem; // equal to 1080px
+  --page-padding: 10px;
 }
 
-.header.nav {
-  margin-left: auto;
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  padding: var(--page-padding);
+  background-color: var(--background-color);
+
+  .header-content {
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    font-size: 1.5rem;
+    max-width: var(--max-content-width);
+  }
+}
+
+main {
+  padding: var(--page-padding);
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+
+  .content-section {
+    margin: 3rem 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  .who-we-are {
+    &__content {
+      display: flex;
+
+      &__text {
+        margin-right: 20px;
+      }
+
+      img {
+        margin-left: auto;
+        max-width: 50%;
+        height: 100%;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+footer {
+  padding: 0 var(--page-padding);
+  background-color: var(--background-color);
+
+  .footer-content {
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: var(--max-content-width);
+  }
 }
