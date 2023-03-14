@@ -132,9 +132,10 @@ table {
  */
 
 :root {
-  --background-color: #e8e0c6;
+  --background-color: #fd5046;
   --max-content-width: 67.5rem; // equal to 1080px
   --page-padding: 10px;
+  --accent-text-color: white;
 }
 
 body {
@@ -144,6 +145,7 @@ body {
 header {
   padding: var(--page-padding);
   background-color: var(--background-color);
+  color: var(--accent-text-color);
 
   .header-content {
     margin: 0 auto;
@@ -183,7 +185,7 @@ main {
         margin-left: auto;
         max-width: 50%;
         height: 100%;
-        border-radius: 5px;
+        border-radius: 30px;
       }
     }
   }
@@ -192,6 +194,7 @@ main {
 footer {
   padding: 0 var(--page-padding);
   background-color: var(--background-color);
+  color: var(--accent-text-color);
 
   .footer-content {
     margin: 0 auto;
@@ -199,5 +202,9 @@ footer {
     display: flex;
     justify-content: space-evenly;
     max-width: var(--max-content-width);
+
+    a {
+      color: var(--accent-text-color);
+    }
   }
 }
